@@ -204,19 +204,6 @@ app.get("/", (req, res) => {
   res.render("home/index.handlebars");
 });
 
-app.get("/support", (req, res) => {
-  res.render("home/support.handlebars");
-});
-
-app.get("/terms", (req, res) => {
-  res.render("home/terms.handlebars");
-});
-
-app.get("/privacy", (req, res) => {
-  res.render("home/privacypolicy.handlebars");
-});
-
-app.use("/dashboard", dashboard);
 app.use("/auth", auth);
 //Others
 const PORT = 3000;

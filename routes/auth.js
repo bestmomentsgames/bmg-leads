@@ -87,7 +87,7 @@ router.post("/signup", (req, res) => {
                        newAccount.password = hash
     
                        newAccount.save().then(() => {
-                         req.flash('success_msg', 'Account successfully created!')
+                         req.flash('success_msg', 'Account successfully created! Come back soon and access your account with 10 free diamonds!')
                          res.redirect("/auth/login")
                        }).catch(() => {
                          req.flash('error_msg', 'There was an error creating the account, please try again')
